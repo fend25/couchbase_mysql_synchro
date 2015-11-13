@@ -1,0 +1,20 @@
+{
+  "name": "couchbase_mysql_synchro",
+  "version": "1.0.0",
+  "description": "couchbase to mysql syncrhonization",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "couchbase",
+    "mysql"
+  ],
+  "author": "fend25",
+  "license": "proprietary",
+  "devDependencies": {
+    "co": "^4.6.0",
+    "couchbase": "^2.1.2",
+    "mysql-promise": "^1.4.0"
+  }
+}
