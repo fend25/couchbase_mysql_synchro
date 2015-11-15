@@ -30,5 +30,7 @@ pocket-practice: fetched and successfully updated 7008 documents,
 Process finished with exit code 0
 ```
 
-Дополнение: На всякий случай (если вдруг будет нужно), есть SQL скрипт `_revert_1_drop_all_new_primary_keys.sql`,
+Дополнение:
+
+На всякий случай (если вдруг будет нужно), есть SQL скрипт `_revert_1_drop_all_new_primary_keys.sql`,
 который отменяет действие первого скрипта (просто удаляет ключ и созданную колонку для первичного ключа).
