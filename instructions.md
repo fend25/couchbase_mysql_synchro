@@ -1,4 +1,4 @@
-0) ОБЯЗАТЕЛЬНО! СДЕЛАТЬ ПОЛНЫЙ БЭКАП БАЗЫ ДАННЫХ (MySQL) - схемы и данных.
+0) ОБЯЗАТЕЛЬНО! СНАЧАЛА СДЕЛАТЬ ПОЛНЫЙ БЭКАП БАЗЫ ДАННЫХ (MySQL) - схемы и данных.
 
 1) Скачать данный репозиторий.
 
@@ -20,7 +20,7 @@
 ```
 started
 getting users...
-users: fetched 122 documents
+users: fetched and successfully updated 122 documents
 
 getting pocket-practice...
 pocket-practice: fetched 7008 documents in 276.772 seconds

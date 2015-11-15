@@ -24,7 +24,7 @@ co(function* () {
     console.log(`started\ngetting users...`);
     var users = yield couchbase.getView(viewGroup, viewName);
     yield processUsers(users);
-    console.log(`users: fetched ${users.length} documents\n`);
+    console.log(`users: fetched and successfully updated ${users.length} documents\n`);
 
     bucketName = config.couchbase.pocketPractice.bucketName;
     viewGroup = config.couchbase.pocketPractice.viewGroup;
