@@ -216,8 +216,8 @@ function* processPatient(doc){
      email, gender, hasAllergies, history_notes,
      last_appointment_date, name, notes, occupation,
      phone_home, phone_mobile, phone_work, photo, surname,
-     title, tsandcs, where_heard)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+     title, tsandcs, where_heard, couchbaseKey)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
      ON DUPLICATE KEY UPDATE
      list = ?, address = ?, channels = ?, dob = ?, documentType = ?,
      email = ?, gender = ?, hasAllergies = ?, history_notes = ?,
@@ -230,6 +230,7 @@ function* processPatient(doc){
       fields.last_appointment_date, fields.name, fields.notes, fields.occupation,
       fields.phone_home, fields.phone_mobile, fields.phone_work, fields.photo, fields.surname,
       fields.title, fields.tsandcs, fields.where_heard,
+      key,
 
       fields.list, fields.address, fields.channels, fields.dob, fields.documentType,
       fields.email, fields.gender, fields.hasAllergies, fields.history_notes,

@@ -15,6 +15,11 @@ DELETE FROM neurotoxin;
 ALTER TABLE neurotoxin ADD COLUMN `couchbaseKey` VARCHAR(250) NOT NULL;
 ALTER TABLE neurotoxin ADD PRIMARY KEY (couchbaseKey);
 
+DELETE FROM patient;
+ALTER TABLE patient ADD COLUMN `couchbaseKey` VARCHAR(250) NOT NULL;
+ALTER TABLE patient ADD UNIQUE INDEX patient_uidx_couchbasekey (couchbaseKey);
+ALTER TABLE patient auto_increment 1;
+
 DELETE FROM patientchecklist;
 ALTER TABLE patientchecklist ADD COLUMN `couchbaseKey` VARCHAR(250) NOT NULL;
 ALTER TABLE patientchecklist ADD PRIMARY KEY (couchbaseKey);
